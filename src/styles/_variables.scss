@@ -1,0 +1,18 @@
+:root {
+	--color-black: #000;
+	--color-white: #fff;
+	--color-gray: #d7d7d7;
+	--color-light-gray: #c4c4c4;
+	--color-dark-gray: #1d1d1d;
+
+	--border: 8px solid var(--color-black);
+    --border-radius: 30px;
+    --shadow: 0 4px 4px 0 var(--color-black);
+
+    --font-family-base: 'Montserrat', 'sans-serif'
+    
+    --button-height: 107px;
+    --header-button-height: 46px;
+
+    --transition-duration: 0.2s;
+}
