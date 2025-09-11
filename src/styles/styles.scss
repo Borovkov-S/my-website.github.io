@@ -1,29 +1,91 @@
-@import 'normalize', 'fonts', 'globals', 'media', 'mixins', 'utils', 'variables';
+@import "normalize", "fonts", "globals", "media", "mixins", "utils", "variables";
 
 body {
     font-family: "Montserrat";
+    overflow-x: hidden;
 }
 
-.header {
-    width: 70vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 5vh;
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/head-bg.png") no-repeat 110%;
 
-    &__nav {
-        &-list {
+    &__wrapper {
+        width: 80vw;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5vh;
+
+        &-nav {
+            &-list {
+                display: flex;
+                column-gap: 50px;
+                font-size: 20px;
+                font-weight: bold;
+                color: var(--color-gray);
+            }
+
+            &-link {
+                @include flex-center;
+                width: 150px;
+                height: 50px;
+
+                &:hover {
+                    background-color: var(--color-gray);
+                    color: var(--color-black);
+                    border-radius: 15px;
+                    transition-duration: var(--transition-duration);
+                }
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
             display: flex;
-            column-gap: 10px;
-            font-size: 20px;
-            font-weight: bold;
+            flex-direction: column;
         }
 
-        &-link {
+        &-welcome {
+            font-size: 40px;
+            font-weight: bold;
+            margin-block: 30px 40px;
+        }
+
+        &-name {
+            font-size: 76px;
+        }
+        &-desc {
+            font-size: 25px;
+            color: #909090;
+            margin-bottom: 145px;
+        }
+        &-socials {
+            display: flex;
+            column-gap: 20px;
+        } 
+        &-social {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-light-gray);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
             @include flex-center;
-            width: 150px;
-            height: 80px;
+
+            &:hover {
+                background-color: var(--color-black);
+                color: var(--color-gray);
+                scale: 1.05;
+            }
         }
     }
 }
