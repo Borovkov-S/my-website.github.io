@@ -7,14 +7,15 @@
             content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         />
         <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="./src/styles/styles.css" />
         <title>Semen Borovkov</title>
     </head>
     <body>
-        <div class="main">
-            <div class="main__wrapper">
-                <header class="main__header">
-                    <a class="main__header-logo logo" href="\">
+        <section class="hero">
+            <div class="hero__wrapper">
+                <header class="hero__header">
+                    <a class="hero__header-logo logo" href="\">
                         <img
                             src="./src/images/logo.png"
                             alt="Logo"
@@ -22,28 +23,28 @@
                             width="80"
                         />
                     </a>
-                    <nav class="main__header-nav">
-                        <ul class="main__header-nav-list">
-                            <li class="main__header-nav-item">
+                    <nav class="hero__header-nav">
+                        <ul class="hero__header-nav-list">
+                            <li class="hero__header-nav-item">
                                 <a
                                     href=""
-                                    class="main__header-nav-link"
+                                    class="hero__header-nav-link"
                                     href="\"
                                     >Обо мне</a
                                 >
                             </li>
-                            <li class="main__header-nav-item">
+                            <li class="hero__header-nav-item">
                                 <a
                                     href=""
-                                    class="main__header-nav-link"
+                                    class="hero__header-nav-link"
                                     href="\"
                                     >Технологии</a
                                 >
                             </li>
-                            <li class="main__header-nav-item">
+                            <li class="hero__header-nav-item">
                                 <a
                                     href=""
-                                    class="main__header-nav-link"
+                                    class="hero__header-nav-link"
                                     href="\"
                                     >Портфолио</a
                                 >
@@ -51,15 +52,15 @@
                         </ul>
                     </nav>
                 </header>
-                <div class="main__content">
-                    <div class="main__content-left">
-                        <p class="main__content-welcome">Привет, я</p>
-                        <h2 class="main__content-name">Семён Боровков</h2>
-                        <p class="main__content-desc">Front-end Developer</p>
-                        <div class="main__content-socials">
+                <div class="hero__content">
+                    <div class="hero__content-left">
+                        <p class="hero__content-welcome">Привет, я</p>
+                        <h1 class="hero__content-name">Семён Боровков</h1>
+                        <p class="hero__content-desc">Front-end Developer</p>
+                        <div class="hero__content-socials">
                             <a
                                 href="https://t.me/brvkv_s"
-                                class="main__content-social"
+                                class="hero__content-social"
                                 target="_blank"
                             >
                                 <svg
@@ -79,7 +80,7 @@
                             </a>
                             <a
                                 href="https://github.com/Borovkov-S"
-                                class="main__content-social"
+                                class="hero__content-social"
                                 target="_blank"
                             >
                                 <svg
@@ -113,11 +114,182 @@
                     <img
                         src="./src/images/my-photo.png"
                         alt="my-photo"
-                        class="main__image"
+                        class="hero__image"
                         width="650"
                     />
                 </div>
             </div>
-        </div>
+        </section>
+        <main class="main">
+            <div class="main-about-skills-wrapper">
+                <section class="main__about about">
+                    <h2>Обо мне</h2>
+                    <p class="about-text">
+                        Я frontend-разработчик и графический дизайнер. Мне нравится
+                        решать сложные задачи: разрабатывать сайты и веб-приложения
+                        или создавать дизайн для разных целей. Меня захватывает
+                        процесс разработки и возможность создавать удобные и
+                        полезные продукты. Посмотрите мои работы в разделе
+                        Портфолио. Я открыт к предложениям на позицию
+                        frontend-разработчика или графического дизайнера, где могу
+                        внести свой вклад и развиваться вместе с компанией. Если у
+                        вас есть вакансия, которая соответствует моим навыкам и
+                        опыту, не стесняйтесь связаться со мной, буду рад
+                        сотрудничеству.
+                    </p>
+                    <svg width="170" height="12" viewBox="0 0 170 12" fill="none">
+                        <rect width="170" height="12" fill="url(#pattern0_1_878)" />
+                        <defs>
+                            <pattern
+                                id="pattern0_1_878"
+                                patternContentUnits="objectBoundingBox"
+                                width="1"
+                                height="1"
+                            >
+                                <use
+                                    xlink:href="#image0_1_878"
+                                    transform="scale(0.00588235 0.0833333)"
+                                />
+                            </pattern>
+                            <image
+                                id="image0_1_878"
+                                width="170"
+                                height="12"
+                                preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAAMCAYAAADyMyZxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RERGOUZCMTkxNUEzMTFFNDgzOEZCNTFFNTNBOUQ0NTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RERGOUZCMTgxNUEzMTFFNDgzOEZCNTFFNTNBOUQ0NTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuZGlkOjA0ODAxMTc0MDcyMDY4MTE4MDgzRTI5QjZFREE2OEQxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA0ODAxMTc0MDcyMDY4MTE4MDgzRTI5QjZFREE2OEQxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0543MwAAAuxJREFUeNrsmVuITVEYx/e4XwrjmBljGrfJMCbJJZ0cpKHcXiiah2ki5FkSkhLywINIEkVIUcotuY94oYmQ6wi5Ny7JMWPcx/H/8p36+lrrrDnnbdn7q1/NmvPb++w96z9rrb12EISj4uAi6OXwysAVMMDhFYA6MCrH6+kJzoGJDq8TOAzmObw8sA0sD6LytsaDJEiBGyDf4g0Br9h7BgZmCOkd9j6CMTmE9Bof/wVMyhDSo+z9BtUZQrqdPWJF1OV+1lTQIjryJogZvJHgvfCeg0EGrxQ8Ed4nMDaLkNaLY7+DGZaQHhfeH7DEEtIdwiM2Rl3ub1WpsN4CfQzeCBXWF2CwwSsBj4RHI/Y4xzXQsuO6OOYbmG4J6UkV0sWWkO5UId0QdbX/NVmF9TZP47oqwTvhveS1q65+oEGFNW757nxedqTdr2CaJaSnhNcKFlpCukuFdN3/3Hl5linFl/oJ9mXh03rwNOjO7btgCvigvOHgEiji9mselR8rr5i9Ydz+DGaCq8LpDS6A0dymkM4B59W5uoBjYpSlkC4C+w19tluNsmvBese9L+B/BG8r5THJHO6XnrSbxTnugUKDVwEahUdhLTd4fcED4VFYE/xZjNfE6c9aeM2sqys4Kzx6eKo1eO3AHvU3WNPG+0563tehCyrVBNAkznNfjJ6yaKR8Izz6eajBK+JzpD0692xeC8uQVhmO7cZbVTKkNQavPdir7n91FvfsdVBpGlnp8WzwA2zN8dgELwN6cPshB+mt8sp5ei/hdiN7DcorZK/S8F003c8Clw0hPSFG2VYeSQ8ZQkoj6Xzxu1VgUxb3uxR0jh5V/N9jTXFYix17rCkOa4VjjzVNc2De2KeQ1qmRtNoykh5Q54w29kNYcRHW+sD+9qqMdwDIewr6W7wCMeU38TLDVB3BEfZ+Bfa3TzTrbREhXRZ1WXiLNuzPBP825DMV7anSq9hShxfjaT7h8DqAg2BuG65xM0/foay/AgwAzVefd5V3qsgAAAAASUVORK5CYII="
+                            />
+                        </defs>
+                    </svg>
+                    <div class="about__skills">
+                        <div class="about__skills-frontend">
+                            <h3 class="about__skills-title">Frontend</h3>
+                            <ul class="about__skills-list">
+                                <li class="about__skills-item">
+                                    Пишу код на HTML, CSS и JavaScript в парадигме
+                                    ООП
+                                </li>
+                                <li class="about__skills-item">
+                                    Создаю адаптивные интерфейсы для разных
+                                    устройств
+                                </li>
+                                <li class="about__skills-item">
+                                    Разрабатываю сайты и веб-приложения на jQuery,
+                                    React, Vue
+                                </li>
+                                <li class="about__skills-item">
+                                    Взаимодействовать с базами данных NoSQL, MongoDB
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about__skills-backend">
+                            <h3 class="about__skills-title">Backend</h3>
+                            <ul class="about__skills-list">
+                                <li class="about__skills-item">
+                                    Пишу код на HTML, CSS и JavaScript в парадигме
+                                    ООП
+                                </li>
+                                <li class="about__skills-item">
+                                    Создаю адаптивные интерфейсы для разных
+                                    устройств
+                                </li>
+                                <li class="about__skills-item">
+                                    Разрабатываю сайты и веб-приложения на jQuery,
+                                    React, Vue
+                                </li>
+                                <li class="about__skills-item">
+                                    Взаимодействовать с базами данных NoSQL, MongoDB
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <svg width="170" height="12" viewBox="0 0 170 12" fill="none">
+                        <rect width="170" height="12" fill="url(#pattern0_1_878)" />
+                        <defs>
+                            <pattern
+                                id="pattern0_1_878"
+                                patternContentUnits="objectBoundingBox"
+                                width="1"
+                                height="1"
+                            >
+                                <use
+                                    xlink:href="#image0_1_878"
+                                    transform="scale(0.00588235 0.0833333)"
+                                />
+                            </pattern>
+                            <image
+                                id="image0_1_878"
+                                width="170"
+                                height="12"
+                                preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAAMCAYAAADyMyZxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RERGOUZCMTkxNUEzMTFFNDgzOEZCNTFFNTNBOUQ0NTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RERGOUZCMTgxNUEzMTFFNDgzOEZCNTFFNTNBOUQ0NTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuZGlkOjA0ODAxMTc0MDcyMDY4MTE4MDgzRTI5QjZFREE2OEQxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA0ODAxMTc0MDcyMDY4MTE4MDgzRTI5QjZFREE2OEQxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+0543MwAAAuxJREFUeNrsmVuITVEYx/e4XwrjmBljGrfJMCbJJZ0cpKHcXiiah2ki5FkSkhLywINIEkVIUcotuY94oYmQ6wi5Ny7JMWPcx/H/8p36+lrrrDnnbdn7q1/NmvPb++w96z9rrb12EISj4uAi6OXwysAVMMDhFYA6MCrH6+kJzoGJDq8TOAzmObw8sA0sD6LytsaDJEiBGyDf4g0Br9h7BgZmCOkd9j6CMTmE9Bof/wVMyhDSo+z9BtUZQrqdPWJF1OV+1lTQIjryJogZvJHgvfCeg0EGrxQ8Ed4nMDaLkNaLY7+DGZaQHhfeH7DEEtIdwiM2Rl3ub1WpsN4CfQzeCBXWF2CwwSsBj4RHI/Y4xzXQsuO6OOYbmG4J6UkV0sWWkO5UId0QdbX/NVmF9TZP47oqwTvhveS1q65+oEGFNW757nxedqTdr2CaJaSnhNcKFlpCukuFdN3/3Hl5linFl/oJ9mXh03rwNOjO7btgCvigvOHgEiji9mselR8rr5i9Ydz+DGaCq8LpDS6A0dymkM4B59W5uoBjYpSlkC4C+w19tluNsmvBese9L+B/BG8r5THJHO6XnrSbxTnugUKDVwEahUdhLTd4fcED4VFYE/xZjNfE6c9aeM2sqys4Kzx6eKo1eO3AHvU3WNPG+0563tehCyrVBNAkznNfjJ6yaKR8Izz6eajBK+JzpD0692xeC8uQVhmO7cZbVTKkNQavPdir7n91FvfsdVBpGlnp8WzwA2zN8dgELwN6cPshB+mt8sp5ei/hdiN7DcorZK/S8F003c8Clw0hPSFG2VYeSQ8ZQkoj6Xzxu1VgUxb3uxR0jh5V/N9jTXFYix17rCkOa4VjjzVNc2De2KeQ1qmRtNoykh5Q54w29kNYcRHW+sD+9qqMdwDIewr6W7wCMeU38TLDVB3BEfZ+Bfa3TzTrbREhXRZ1WXiLNuzPBP825DMV7anSq9hShxfjaT7h8DqAg2BuG65xM0/foay/AgwAzVefd5V3qsgAAAAASUVORK5CYII="
+                            />
+                        </defs>
+                    </svg>
+                </section>
+                <section class="main__skills skills">
+                    <h2>Технологии</h2>
+                    <div class="skills-using">
+                        <h3>Использую:</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/html5.svg" alt="html-image">
+                                <p>HTML5</p>
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/css3.svg" alt="html-image">
+                                <p>CSS3</p>
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/sass.svg" alt="html-image">
+                                <p>SASS</p>
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/styled-components.png" alt="html-image" width="100">
+                                <p>STYLED-COMPONENTS</p>
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/js.svg" alt="html-image">
+                                <p>JAVASCRIPT</p>
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/react.svg" alt="html-image">
+                                <p>REACT</p>
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/git.svg" alt="html-image">
+                                <p>GIT</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-learning">
+                        <h3>Изучаю:</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/node.svg" alt="html-image">
+                                NODEJS
+                            </li>
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/ts.svg" alt="html-image">
+                                TYPESCRIPT
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-other">
+                        <h3>Прочее:</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">
+                                <img src="./src/images/technologies/figma.svg" alt="html-image">
+                                <p>FIGMA</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <section class="main__portfolio portfolio">
+                <div class="portfolio__title-block">
+                    <h2>Портфолио</h2>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

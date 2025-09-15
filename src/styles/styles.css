@@ -217,10 +217,9 @@ svg * {
 body {
   font-family: var(--font-family-base);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.28;
   color: var(--color-black);
-  background-color: var(--color-gray);
 }
 
 a,
@@ -232,6 +231,27 @@ svg * {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  line-height: 128%;
+  letter-spacing: 0.36em;
+  height: 110px;
+  min-width: 330px;
+  padding-inline: 50px;
+  margin: 0;
+  border: 8px solid var(--color-black);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h3 {
+  font-size: 28px;
+  margin-block: 0 50px;
 }
 
 .visually-hidden {
@@ -279,12 +299,13 @@ body {
   overflow-x: hidden;
 }
 
-.main {
+.hero {
   width: 100vw;
   height: 100vh;
   background: url("../images/head-bg.png") no-repeat 110%;
+  background-color: var(--color-gray);
 }
-.main__wrapper {
+.hero__wrapper {
   width: 80vw;
   height: 100%;
   margin: 0 auto;
@@ -292,13 +313,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.main__header {
+.hero__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 5vh;
 }
-.main__header-nav-list {
+.hero__header-nav-list {
   display: flex;
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -306,46 +327,46 @@ body {
   font-weight: bold;
   color: var(--color-gray);
 }
-.main__header-nav-link {
+.hero__header-nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 50px;
 }
-.main__header-nav-link:hover {
+.hero__header-nav-link:hover {
   background-color: var(--color-gray);
   color: var(--color-black);
   border-radius: 15px;
   transition-duration: var(--transition-duration);
 }
-.main__content {
+.hero__content {
   display: flex;
   justify-content: space-between;
 }
-.main__content-left {
+.hero__content-left {
   display: flex;
   flex-direction: column;
 }
-.main__content-welcome {
+.hero__content-welcome {
   font-size: 40px;
   font-weight: bold;
   margin-block: 30px 40px;
 }
-.main__content-name {
+.hero__content-name {
   font-size: 76px;
 }
-.main__content-desc {
+.hero__content-desc {
   font-size: 25px;
   color: #909090;
   margin-bottom: 145px;
 }
-.main__content-socials {
+.hero__content-socials {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.main__content-social {
+.hero__content-social {
   width: 40px;
   height: 40px;
   background-color: var(--color-light-gray);
@@ -354,8 +375,80 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main__content-social:hover {
+.hero__content-social:hover {
   background-color: var(--color-black);
   color: var(--color-gray);
   scale: 1.05;
+}
+
+.main {
+  width: 100vw;
+}
+.main-about-skills-wrapper {
+  padding: 150px 23vw;
+  background: radial-gradient(50% 50% at 50% 50%, var(--color-white) 0%, var(--color-gray) 100%);
+}
+.main .about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+  align-items: center;
+  line-height: 140%;
+}
+.main .about-text {
+  text-align: center;
+}
+.main .about__skills {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.main .about__skills-frontend::before {
+  content: url("../images/about/frontend.svg");
+  position: absolute;
+  translate: -40px -20px;
+}
+.main .about__skills-backend::before {
+  content: url("../images/about/backend.svg");
+  position: absolute;
+  translate: -50px -25px;
+}
+.main .about__skills-item {
+  padding-left: 20px;
+}
+.main .about__skills-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.main .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 70px;
+  margin-top: 70px;
+}
+.main .skills-using, .main .skills-learning, .main .skills-other {
+  width: 100%;
+}
+.main .skills-list {
+  display: flex;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  flex-wrap: wrap;
+  row-gap: 70px;
+}
+.main .skills-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  width: 12vw;
+  letter-spacing: 0.14em;
+  text-align: center;
+}
+.main .portfolio__title-block {
+  height: 320px;
+  background: url("../images/portfolio/title-bg.png") no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

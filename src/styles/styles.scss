@@ -1,14 +1,15 @@
-@import "normalize", "fonts", "globals", "media", "mixins", "utils", "variables";
+@import "normalize", "fonts", "mixins", "globals", "media", "utils", "variables";
 
 body {
     font-family: "Montserrat";
     overflow-x: hidden;
 }
 
-.main {
+.hero {
     width: 100vw;
     height: 100vh;
     background: url("../images/head-bg.png") no-repeat 110%;
+    background-color: var(--color-gray);
 
     &__wrapper {
         width: 80vw;
@@ -73,7 +74,7 @@ body {
         &-socials {
             display: flex;
             column-gap: 20px;
-        } 
+        }
         &-social {
             width: 40px;
             height: 40px;
@@ -86,6 +87,100 @@ body {
                 color: var(--color-gray);
                 scale: 1.05;
             }
+        }
+    }
+}
+
+.main {
+    width: 100vw;
+    
+    &-about-skills-wrapper {
+        padding: 150px 23vw;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            var(--color-white) 0%,
+            var(--color-gray) 100%
+        );
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+        align-items: center;
+        line-height: 140%;
+
+        &-text {
+            text-align: center;
+        }
+
+        &__skills {
+            display: flex;
+            column-gap: 70px;
+
+            &-frontend {
+                &::before {
+                    content: url("../images/about/frontend.svg");
+                    position: absolute;
+                    translate: -40px -20px;
+                }
+            }
+
+            &-backend {
+                &::before {
+                    content: url("../images/about/backend.svg");
+                    position: absolute;
+                    translate: -50px -25px;
+                }
+            }
+
+            &-item {
+                padding-left: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 70px;
+        margin-top: 70px;
+
+        &-using,
+        &-learning,
+        &-other {
+            width: 100%;
+        }
+
+        &-list {
+            display: flex;
+            column-gap: 2vw;
+            flex-wrap: wrap;
+            row-gap: 70px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            width: 12vw;
+            letter-spacing: 0.14em;
+            text-align: center;
+        }
+    }
+
+    .portfolio {
+
+        &__title-block {
+            height: 320px;
+            background: url('../images/portfolio/title-bg.png') no-repeat;
+            @include flex-center;
         }
     }
 }

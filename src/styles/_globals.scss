@@ -1,10 +1,9 @@
 body {
     font-family: var(--font-family-base);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.28;
     color: var(--color-black);
-    background-color: var(--color-gray);
 }
 
 a,
@@ -16,4 +15,22 @@ svg * {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h2 {
+    @include flex-center;
+    font-size: 34px;
+    line-height: 128%;
+    letter-spacing: 0.36em;
+    height: 110px;
+    min-width: 330px;
+    padding-inline: 50px;
+    margin: 0;
+    border: 8px solid var(--color-black);
+    width: fit-content;
+}
+
+h3 {
+    font-size: 28px;
+    margin-block: 0 50px;
 }
