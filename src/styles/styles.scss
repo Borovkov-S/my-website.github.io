@@ -31,7 +31,7 @@ body {
                 column-gap: 50px;
                 font-size: 20px;
                 font-weight: bold;
-                color: var(--color-gray);
+                color: var(--color-white);
             }
 
             &-link {
@@ -40,7 +40,7 @@ body {
                 height: 50px;
 
                 &:hover {
-                    background-color: var(--color-gray);
+                    background-color: var(--color-white);
                     color: var(--color-black);
                     border-radius: 15px;
                     transition-duration: var(--transition-duration);
@@ -68,7 +68,7 @@ body {
         }
         &-desc {
             font-size: 25px;
-            color: #909090;
+            color: var(--color-light-gray);
             margin-bottom: 145px;
         }
         &-socials {
@@ -76,16 +76,17 @@ body {
             column-gap: 20px;
         }
         &-social {
-            width: 40px;
-            height: 40px;
-            background-color: var(--color-light-gray);
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-dark-gray);
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
             @include flex-center;
 
             &:hover {
                 background-color: var(--color-black);
                 color: var(--color-gray);
-                scale: 1.05;
+                border-radius: 7px;
+                scale: 1.1;
             }
         }
     }
@@ -93,13 +94,13 @@ body {
 
 .main {
     width: 100vw;
-    
+
     &-about-skills-wrapper {
         padding: 150px 23vw;
-        background: radial-gradient(
-            50% 50% at 50% 50%,
-            var(--color-white) 0%,
-            var(--color-gray) 100%
+        background: linear-gradient(
+            180deg,
+            var(--color-gray) 0%,
+            var(--color-light-gray) 100%
         );
     }
 
@@ -176,11 +177,58 @@ body {
     }
 
     .portfolio {
-
+        background: url('../images/portfolio/portfolio-bg.png') no-repeat;
         &__title-block {
             height: 320px;
-            background: url('../images/portfolio/title-bg.png') no-repeat;
             @include flex-center;
+
+            h2 {
+                color: var(--color-white);
+                border: 8px solid var(--color-white);
+            }
         }
+
+        &__project {
+            &-list {
+                display: flex;
+                justify-content: space-between;
+                row-gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            &-item {
+                height: 340px;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            
+            &-image {
+                width:33vw;
+                height: 340px;
+            }
+        }
+    }
+}
+
+.footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    row-gap: 45px;
+    color: var(--color-white);
+    background-color: var(--color-dark-gray);
+
+    &__back-to-top {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    &__socials-container {
+        display: flex;
+        column-gap: 30px;
     }
 }
