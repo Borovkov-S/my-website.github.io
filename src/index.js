@@ -45,7 +45,6 @@ if (window.innerWidth < 768) {
 }
 
 heroContent.appendChild(heroImage);
-heroSection.style.height = `${window.innerHeight}px`;
 
 window.addEventListener("resize", () => {
     if (window.innerWidth < 768) {

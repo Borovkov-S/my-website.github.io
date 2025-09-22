@@ -293,6 +293,7 @@ h3 {
 
 .hero {
   width: 100vw;
+  height: 100svh;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: var(--color-gray);
