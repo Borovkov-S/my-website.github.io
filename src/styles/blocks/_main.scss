@@ -1,0 +1,21 @@
+.main {
+    width: 100vw;
+    z-index: 2000;
+
+    &-about-skills-wrapper {
+        padding: 150px 23vw;
+        background: linear-gradient(
+            180deg,
+            var(--color-gray) 0%,
+            var(--color-light-gray) 100%
+        );
+
+        @include desktop {
+            padding: 100px 15vw;
+        }
+
+        @include mobile {
+            padding: 70px 10vw;
+        }
+    }
+}

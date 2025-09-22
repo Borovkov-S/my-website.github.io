@@ -1,0 +1,25 @@
+.back-to-top {
+    position: fixed;
+    right: 2vw;
+    top: 85vh;
+    border: 4px solid currentColor;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--color-white);
+
+    &:hover {
+        box-shadow: 0 0 10px 5px currentColor;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: invert(70%);
+        border-radius: 25px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

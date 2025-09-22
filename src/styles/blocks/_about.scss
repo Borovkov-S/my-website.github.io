@@ -1,0 +1,62 @@
+    .about {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+        align-items: center;
+        line-height: 140%;
+
+        @include mobile {
+            row-gap: 40px;
+        }
+
+        &-text {
+            text-align: center;
+        }
+
+        &__skills {
+            display: flex;
+            column-gap: 70px;
+
+            @include tablet {
+                flex-direction: column;
+                row-gap: 70px;
+                text-align: center;
+            }
+
+            &-frontend {
+                &::before {
+                    content: url("../images/about/frontend.svg");
+                    position: absolute;
+                    translate: -40px -20px;
+
+                    @include tablet {
+                        translate: -130px -20px;
+                    }
+                }
+            }
+
+            &-backend {
+                &::before {
+                    content: url("../images/about/backend.svg");
+                    position: absolute;
+                    translate: -50px -25px;
+
+                    @include tablet {
+                        translate: -130px -25px;
+                    }
+                }
+            }
+
+            &-item {
+                padding-left: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                @include tablet {
+                    padding: 0 0 15px 0;
+                }
+            }
+        }
+    }
