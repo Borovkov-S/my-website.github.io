@@ -4,8 +4,9 @@ const footer = document.querySelector(".footer");
 const burger = document.querySelector(".burger");
 const burgerButton = burger.querySelector(".burger-button");
 const burgerMenu = document.querySelector(".burger-menu");
-const headerNavigation = document.querySelector(".hero__header-nav");
-const heroContent = document.querySelector(".hero__content");
+const heroSection = document.querySelector(".hero");
+const headerNavigation = heroSection.querySelector(".hero__header-nav");
+const heroContent = heroSection.querySelector(".hero__content");
 const loader = document.querySelector(".loader");
 
 const heroImage = document.createElement("img");
@@ -44,8 +45,10 @@ if (window.innerWidth < 768) {
 }
 
 heroContent.appendChild(heroImage);
+heroSection.style.height = `${window.innerHeight}px`;
 
 window.addEventListener("resize", () => {
+    heroSection.style.height = `${window.innerHeight}px`;
     if (window.innerWidth < 768) {
         burger.classList.remove("visually-hidden");
         headerNavigation.classList.add("visually-hidden");
