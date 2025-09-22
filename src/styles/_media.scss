@@ -24,7 +24,7 @@ $mobile: 767px;
 	}
 }
 @mixin tablet {
-	@media (max-width: $desktop) {
+	@media (max-width: $tablet) {
 		@content;
 	}
 }
@@ -36,7 +36,7 @@ $mobile: 767px;
 }
 
 @mixin mobile {
-	@media (min-width: $mobile) {
+	@media (max-width: $mobile) {
 		@content;
 	}
 }

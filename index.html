@@ -9,10 +9,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge" />
         <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="./src/styles/styles.css" />
+        <script src="./src/index.js" defer></script>
         <title>Semen Borovkov</title>
     </head>
     <body>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__wrapper">
                 <header class="hero__header">
                     <a class="hero__header-logo logo" href="\">
@@ -23,11 +24,11 @@
                             width="80"
                         />
                     </a>
-                    <nav class="hero__header-nav">
+                    <nav class="hero__header-nav visually-hidden">
                         <ul class="hero__header-nav-list">
                             <li class="hero__header-nav-item">
                                 <a
-                                    href=""
+                                    href="#about"
                                     class="hero__header-nav-link"
                                     href="\"
                                     >Обо мне</a
@@ -35,7 +36,7 @@
                             </li>
                             <li class="hero__header-nav-item">
                                 <a
-                                    href=""
+                                    href="#skills"
                                     class="hero__header-nav-link"
                                     href="\"
                                     >Технологии</a
@@ -43,7 +44,7 @@
                             </li>
                             <li class="hero__header-nav-item">
                                 <a
-                                    href=""
+                                    href="#portfolio"
                                     class="hero__header-nav-link"
                                     href="\"
                                     >Портфолио</a
@@ -111,31 +112,26 @@
                             </a>
                         </div>
                     </div>
-                    <img
-                        src="./src/images/my-photo.png"
-                        alt="my-photo"
-                        class="hero__image"
-                        width="650"
-                    />
                 </div>
             </div>
         </section>
         <main class="main">
             <div class="main-about-skills-wrapper">
-                <section class="main__about about">
+                <section class="main__about about" id="about">
                     <h2>Обо мне</h2>
                     <p class="about-text">
-                        Я frontend-разработчик и графический дизайнер. Мне
-                        нравится решать сложные задачи: разрабатывать сайты и
-                        веб-приложения или создавать дизайн для разных целей.
-                        Меня захватывает процесс разработки и возможность
-                        создавать удобные и полезные продукты. Посмотрите мои
-                        работы в разделе Портфолио. Я открыт к предложениям на
-                        позицию frontend-разработчика или графического
-                        дизайнера, где могу внести свой вклад и развиваться
-                        вместе с компанией. Если у вас есть вакансия, которая
-                        соответствует моим навыкам и опыту, не стесняйтесь
-                        связаться со мной, буду рад сотрудничеству.
+                        Я frontend-разработчик. Разрабатываю сайты,
+                        веб-приложения и нереально наслаждаюсь процессом,
+                        особенно, если сталкиваюсь с чем-то новым. Очень
+                        воодушевляет осознание того, что могу разрабатывать
+                        удобные и полезные продукты буквально «из ничего». Ниже
+                        в разделе «Портфолио» вы можете ознакомиться с моими
+                        работами. Я открыт к предложениям на позицию
+                        frontend-разработчика, где с удовольствием внёс бы и
+                        свой вклад в развитие компании. Если после изучения моих
+                        работ у вас появится мысль, что у вас как раз есть
+                        вакансия, на которую я подхожу - свяжитесь со мной, буду
+                        рад сотрудничеству.
                     </p>
                     <img
                         src="./src/images/about/separator.svg"
@@ -146,20 +142,22 @@
                             <h3 class="about__skills-title">Frontend</h3>
                             <ul class="about__skills-list">
                                 <li class="about__skills-item">
-                                    Пишу код на HTML, CSS и JavaScript в
-                                    парадигме ООП
+                                    Адаптивная и кроссбраузерная верстка на
+                                    чистом HTML, CSS или с использованием
+                                    препроцессоров
                                 </li>
                                 <li class="about__skills-item">
-                                    Создаю адаптивные интерфейсы для разных
-                                    устройств
+                                    Реализация логики и интерактивности с
+                                    помощью JS
                                 </li>
                                 <li class="about__skills-item">
-                                    Разрабатываю сайты и веб-приложения на
-                                    jQuery, React, Vue
+                                    Взаимодействие с backend (работа с API)
                                 </li>
                                 <li class="about__skills-item">
-                                    Взаимодействовать с базами данных NoSQL,
-                                    MongoDB
+                                    Написание полноценных React-приложений
+                                </li>
+                                <li class="about__skills-item">
+                                    Сборка и деплой с помощью Docker
                                 </li>
                             </ul>
                         </div>
@@ -167,20 +165,15 @@
                             <h3 class="about__skills-title">Backend</h3>
                             <ul class="about__skills-list">
                                 <li class="about__skills-item">
-                                    Пишу код на HTML, CSS и JavaScript в
-                                    парадигме ООП
+                                    Разработка серверной логики и API на Node.js
+                                    + Express.js
                                 </li>
                                 <li class="about__skills-item">
-                                    Создаю адаптивные интерфейсы для разных
-                                    устройств
+                                    Подключение БД (MongoDB)
                                 </li>
                                 <li class="about__skills-item">
-                                    Разрабатываю сайты и веб-приложения на
-                                    jQuery, React, Vue
-                                </li>
-                                <li class="about__skills-item">
-                                    Взаимодействовать с базами данных NoSQL,
-                                    MongoDB
+                                    Реализация регистрации, аутентификации и
+                                    авторизации с шифрованием (bcrypt, JWT)
                                 </li>
                             </ul>
                         </div>
@@ -190,7 +183,7 @@
                         alt="separator"
                     />
                 </section>
-                <section class="main__skills skills">
+                <section class="main__skills skills" id="skills">
                     <h2>Технологии</h2>
                     <div class="skills-using">
                         <h3>Использую:</h3>
@@ -205,52 +198,82 @@
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/css3.svg"
-                                    alt="html-image"
+                                    alt="css-image"
                                 />
                                 <p>CSS3</p>
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/sass.svg"
-                                    alt="html-image"
+                                    alt="sass-image"
                                 />
                                 <p>SASS</p>
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/styled-components.png"
-                                    alt="html-image"
+                                    alt="styled-components-image"
                                     width="100"
                                 />
-                                <p>STYLED-COMPONENTS</p>
+                                <p>Styled-components</p>
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/js.svg"
-                                    alt="html-image"
+                                    alt="js-image"
                                 />
-                                <p>JAVASCRIPT</p>
+                                <p>JavaScript</p>
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/react.svg"
-                                    alt="html-image"
+                                    alt="react-image"
                                 />
-                                <p>REACT</p>
+                                <p>React</p>
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/redux.svg"
-                                    alt="html-image"
+                                    alt="redux-image"
                                 />
-                                <p>REDUX</p>
+                                <p>Redux</p>
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/git.svg"
-                                    alt="html-image"
+                                    alt="git-image"
                                 />
-                                <p>GIT</p>
+                                <p>Git</p>
+                            </li>
+                            <li class="skills-item">
+                                <img
+                                    src="./src/images/technologies/mongodb.svg"
+                                    alt="mongodb-image"
+                                />
+                                <p>MongoDB</p>
+                            </li>
+                            <li class="skills-item">
+                                <img
+                                    src="./src/images/technologies/docker.svg"
+                                    alt="docker-image"
+                                />
+                                <p>Docker</p>
+                            </li>
+                            <li class="skills-item">
+                                <img
+                                    src="./src/images/technologies/webpack.png"
+                                    alt="webpack-image"
+                                    width="100"
+                                />
+                                <p>Webpack</p>
+                            </li>
+                            <li class="skills-item">
+                                <img
+                                    src="./src/images/technologies/vite.png"
+                                    alt="vite-image"
+                                    width="101"
+                                />
+                                <p>Vite</p>
                             </li>
                         </ul>
                     </div>
@@ -260,16 +283,16 @@
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/node.svg"
-                                    alt="html-image"
+                                    alt="nodejs-image"
                                 />
-                                NODEJS
+                                Node.JS
                             </li>
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/ts.svg"
-                                    alt="html-image"
+                                    alt="typescript-image"
                                 />
-                                TYPESCRIPT
+                                TypeScript
                             </li>
                         </ul>
                     </div>
@@ -279,15 +302,22 @@
                             <li class="skills-item">
                                 <img
                                     src="./src/images/technologies/figma.svg"
-                                    alt="html-image"
+                                    alt="figma-image"
                                 />
-                                <p>FIGMA</p>
+                                <p>Figma</p>
+                            </li>
+                            <li class="skills-item">
+                                <img
+                                    src="./src/images/technologies/adobe_photoshop.svg"
+                                    alt="adobe_photoshop-image"
+                                />
+                                <p>Adobe Photoshop</p>
                             </li>
                         </ul>
                     </div>
                 </section>
             </div>
-            <section class="main__portfolio portfolio">
+            <section class="main__portfolio portfolio" id="portfolio">
                 <div class="portfolio__title-block">
                     <h2>Портфолио</h2>
                 </div>
@@ -332,7 +362,7 @@
             </section>
         </main>
         <footer class="footer">
-            <a href="/" class="footer__back-to-top">
+            <a href="#hero" class="footer__back-to-top">
                 <svg
                     width="20"
                     height="20"
@@ -399,7 +429,11 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="https://vk.com/brvkvs" class="footer__social" target="_blank">
+                <a
+                    href="https://vk.com/brvkvs"
+                    class="footer__social"
+                    target="_blank"
+                >
                     <svg
                         width="50"
                         height="50"
@@ -418,5 +452,38 @@
             </div>
             <p class="footer__copy">©2025. Семён Боровков</p>
         </footer>
+        <a href="#hero" class="back-to-top visually-hidden">
+            <svg
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M19.92 15.8001C19.73 15.8001 19.54 15.7301 19.39 15.5801L12.87 9.06008C12.39 8.58008 11.61 8.58008 11.13 9.06008L4.61002 15.5801C4.32002 15.8701 3.84002 15.8701 3.55002 15.5801C3.26002 15.2901 3.26002 14.8101 3.55002 14.5201L10.07 8.00008C11.13 6.94008 12.86 6.94008 13.93 8.00008L20.45 14.5201C20.74 14.8101 20.74 15.2901 20.45 15.5801C20.3 15.7201 20.11 15.8001 19.92 15.8001Z"
+                    fill="#292D32"
+                />
+            </svg>
+        </a>
+        <div class="burger visually-hidden">
+            <button class="burger-button" type="button"></button>
+        </div>
+        <div class="burger-menu">
+            <ul class="burger-list">
+                <li class="burger-item">
+                    <a href="#about" class="burger-link">Обо мне</a>
+                </li>
+                <li class="burger-item">
+                    <a href="#skills" class="burger-link">Технологии</a>
+                </li>
+                <li class="burger-item">
+                    <a href="#portfolio" class="burger-link">Портфолио</a>
+                </li>
+            </ul>
+        </div>
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
     </body>
 </html>

@@ -20,17 +20,15 @@ a {
 h2 {
     @include flex-center;
     font-size: 34px;
-    line-height: 128%;
     letter-spacing: 0.36em;
     height: 110px;
-    min-width: 330px;
-    padding-inline: 50px;
+    padding-inline:calc(50px + 0.36em) 50px;
     margin: 0;
     border: 8px solid var(--color-white);
-    width: fit-content;
+    text-wrap: nowrap;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 30px;
     margin-block: 0 50px;
 }

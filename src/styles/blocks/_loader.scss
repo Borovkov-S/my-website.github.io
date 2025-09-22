@@ -1,0 +1,39 @@
+.loader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-gray);
+    z-index: 2000;
+    @include flex-center;
+
+    &-inner {
+        width: 70px;
+        aspect-ratio: 1;
+        --c: no-repeat linear-gradient(var(--color-black) 0 0);
+        background: var(--c) 0% 100%, var(--c) 50% 100%, var(--c) 100% 100%;
+        animation: loader 1s infinite linear;
+        z-index: 3000;
+    }
+}
+
+@keyframes loader {
+    0% {
+        background-size: 20% 100%, 20% 100%, 20% 100%;
+    }
+    20% {
+        background-size: 20% 60%, 20% 100%, 20% 100%;
+    }
+    40% {
+        background-size: 20% 80%, 20% 60%, 20% 100%;
+    }
+    60% {
+        background-size: 20% 100%, 20% 80%, 20% 60%;
+    }
+    80% {
+        background-size: 20% 100%, 20% 100%, 20% 80%;
+    }
+    100% {
+        background-size: 20% 100%, 20% 100%, 20% 100%;
+    }
+}
