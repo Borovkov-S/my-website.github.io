@@ -37,11 +37,12 @@ if (window.innerWidth < 768) {
     burger.classList.remove("visually-hidden");
     headerNavigation.classList.add("visually-hidden");
     heroImage.setAttribute("src", "./src/images/mobile-photo.png");
+    heroImage.style.maxWidth = "400px";
 } else {
     burger.classList.add("visually-hidden");
     headerNavigation.classList.remove("visually-hidden");
     heroImage.setAttribute("src", "./src/images/my-photo.png");
-    heroImage.setAttribute("width", "650");
+    heroImage.setAttribute("width", "");
 }
 
 heroContent.appendChild(heroImage);
