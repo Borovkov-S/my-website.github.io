@@ -48,7 +48,6 @@ heroContent.appendChild(heroImage);
 heroSection.style.height = `${window.innerHeight}px`;
 
 window.addEventListener("resize", () => {
-    heroSection.style.height = `${window.innerHeight}px`;
     if (window.innerWidth < 768) {
         burger.classList.remove("visually-hidden");
         headerNavigation.classList.add("visually-hidden");
