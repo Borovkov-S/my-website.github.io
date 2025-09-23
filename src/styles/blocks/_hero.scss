@@ -101,7 +101,7 @@
                     height: 100%;
                 }
 
-                &:hover {
+                @include hover {
                     border-color: currentColor;
                     border-radius: 15px;
                 }
@@ -223,7 +223,7 @@
                 }
             }
 
-            &:hover {
+            @include hover {
                 background-color: var(--color-black);
                 color: var(--color-gray);
                 border-radius: 7px;

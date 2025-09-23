@@ -30,7 +30,7 @@
 
             &-item {
                 height: 20vw;
-                &:hover {
+                @include hover {
                     opacity: 0.7;
                 }
                 @include tablet {
