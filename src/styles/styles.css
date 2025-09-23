@@ -719,6 +719,7 @@ h3 {
        column-gap: 0.5vw;
   row-gap: 10px;
   flex-wrap: wrap;
+  background: var(--color-dark-gray);
 }
 @media (max-width: 1023px) {
   .portfolio__project-list {

@@ -20,6 +20,7 @@
             column-gap: 0.5vw;
             row-gap: 10px;
             flex-wrap: wrap;
+            background: var(--color-dark-gray);
 
             @include tablet {
                 column-gap: 1vw;
