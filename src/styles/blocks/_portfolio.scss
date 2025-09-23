@@ -1,59 +1,63 @@
-    .portfolio {
-        background: url("../images/portfolio/portfolio-bg.png") no-repeat;
-        &__title-block {
-            height: 270px;
-            @include flex-center;
+.portfolio {
+    background: url("../images/portfolio/portfolio-bg.png") no-repeat;
+    &__title-block {
+        height: 270px;
+        @include flex-center;
 
-            h2 {
-                color: var(--color-white);
-                border: 8px solid var(--color-white);
+        h2 {
+            color: var(--color-white);
+            border: 8px solid var(--color-white);
+        }
+
+        @include mobile {
+            height: 200px;
+        }
+    }
+
+    &__project {
+        &-list {
+            display: flex;
+            column-gap: 0.5vw;
+            row-gap: 10px;
+            flex-wrap: wrap;
+
+            @include tablet {
+                column-gap: 1vw;
             }
 
             @include mobile {
-                height: 200px;
+                justify-content: center;
+                row-gap: 20px;
+                padding-bottom: 20px;
             }
         }
 
-        &__project {
-            &-list {
-                display: flex;
-                justify-content: space-between;
-                row-gap: 10px;
-                flex-wrap: wrap;
+        &-item {
+            height: 20vw;
+            @include hover {
+                opacity: 0.7;
+            }
+            @include tablet {
+                height: 30vw;
+            }
+            @include mobile {
+                height: 45vw;
+            }
+        }
 
-                @include mobile {
-                    justify-content: center;
-                    row-gap: 20px;
-                    padding-bottom: 20px;
-                }
+        &-image {
+            width: 33vw;
+            height: 20vw;
+
+            @include tablet {
+                width: 49.5vw;
+                height: 30vw;
             }
 
-            &-item {
-                height: 20vw;
-                @include hover {
-                    opacity: 0.7;
-                }
-                @include tablet {
-                    height: 30vw;
-                }
-                @include mobile {
-                    height: 45vw;
-                }
-            }
-
-            &-image {
-                width: 33vw;
-                height: 20vw;
-
-                @include tablet {
-                    width: 49.5vw;
-                    height: 30vw;
-                }
-
-                @include mobile {
-                    width: 90vw;
-                    height: 45vw;
-                }
+            @include mobile {
+                width: 90vw;
+                height: 45vw;
             }
         }
     }
+}

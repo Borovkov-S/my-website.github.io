@@ -715,9 +715,16 @@ h3 {
 }
 .portfolio__project-list {
   display: flex;
-  justify-content: space-between;
+  -moz-column-gap: 0.5vw;
+       column-gap: 0.5vw;
   row-gap: 10px;
   flex-wrap: wrap;
+}
+@media (max-width: 1023px) {
+  .portfolio__project-list {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+  }
 }
 @media (max-width: 767px) {
   .portfolio__project-list {
