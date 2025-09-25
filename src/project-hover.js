@@ -1,4 +1,4 @@
-export const createProjectHover = ({id, description, demo, github}) => {
+const createProjectHover = ({id, description, demo, github}) => {
     const projectHover = document.createElement("div");
     projectHover.className = "portfolio__project-hover";
     projectHover.setAttribute('id', id)

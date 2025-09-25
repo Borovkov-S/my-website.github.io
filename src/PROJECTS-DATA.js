@@ -1,4 +1,4 @@
-export const PROJECTS_DATA = {
+const PROJECTS_DATA = {
     'my-website': {
         id: 'my-website',
         description: 'Данный сайт написан на HTML, SCSS, JS', 

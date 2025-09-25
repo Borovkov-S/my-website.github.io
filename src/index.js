@@ -1,6 +1,3 @@
-import { PROJECTS_DATA } from "./PROJECTS-DATA";
-import { createProjectHover } from "./project-hover";
-
 const heroSection = document.querySelector(".hero");
 const headerNavigation = heroSection.querySelector(".hero__header-nav");
 const heroContent = heroSection.querySelector(".hero__content");
