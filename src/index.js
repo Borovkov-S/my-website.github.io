@@ -1,12 +1,15 @@
-const backToTopButton = document.querySelector(".back-to-top");
+import { PROJECTS_DATA } from "./PROJECTS-DATA";
+import { createProjectHover } from "./project-hover";
+
+const heroSection = document.querySelector(".hero");
+const headerNavigation = heroSection.querySelector(".hero__header-nav");
+const heroContent = heroSection.querySelector(".hero__content");
 const portfolioBlock = document.querySelector(".portfolio");
 const footer = document.querySelector(".footer");
 const burger = document.querySelector(".burger");
 const burgerButton = burger.querySelector(".burger-button");
 const burgerMenu = document.querySelector(".burger-menu");
-const heroSection = document.querySelector(".hero");
-const headerNavigation = heroSection.querySelector(".hero__header-nav");
-const heroContent = heroSection.querySelector(".hero__content");
+const backToTopButton = document.querySelector(".back-to-top");
 const loader = document.querySelector(".loader");
 
 const heroImage = document.createElement("img");
@@ -16,7 +19,47 @@ heroImage.setAttribute("class", "hero__image");
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         loader.remove();
-    }, 100);
+    }, 500);
+});
+
+const portfolioProjects = portfolioBlock.querySelectorAll(
+    ".portfolio__project-image"
+);
+
+portfolioProjects.forEach((project) => {
+    project
+        .closest(".portfolio__project-item")
+        .appendChild(createProjectHover(PROJECTS_DATA[project.id]));
+
+    project.addEventListener("mouseover", ({ target }) => {
+        const hovers = portfolioBlock.querySelectorAll(
+            ".portfolio__project-hover"
+        );
+        hovers.forEach((hover) => {
+            hover.style.height = "0";
+
+            if (target.id === hover.id) {
+                hover.style.height = "100%";
+            }
+        });
+    });
+});
+
+document.addEventListener("mouseover", ({ target }) => {
+    const hovers = portfolioBlock.querySelectorAll(".portfolio__project-hover");
+    if (
+        ![
+            "portfolio__project-image",
+            "portfolio__project-hover",
+            "portfolio__project-description",
+            "portfolio__project-btn-block",
+            "portfolio__project-button",
+        ].includes(target.className)
+    ) {
+        hovers.forEach((hover) => {
+            hover.style.height = "0";
+        });
+    }
 });
 
 burgerButton.addEventListener("click", () => {
@@ -28,10 +71,6 @@ burgerButton.addEventListener("click", () => {
         burgerMenu.style.top = "-100vh";
     }
 });
-
-if (window.innerWidth > 1980) {
-    portfolioBlock.style.background = "var(--color-light-gray)";
-}
 
 if (window.innerWidth < 768) {
     burger.classList.remove("visually-hidden");
