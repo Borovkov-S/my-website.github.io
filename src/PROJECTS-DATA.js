@@ -25,7 +25,7 @@ const PROJECTS_DATA = {
     },
     'weather-sounds': {
         id: 'weather-sounds',
-        description: 'Учебный проект "Звуки природы" с возможностью переключения звуков и управлением громкостью', 
+        description: 'Учебный проект "Звуки природы" с возможностью переключения звуков и управлением громкостью. Написан на HTML, CSS и TypeScript', 
         demo: 'https://borovkov-s.github.io/Weather-sounds.github.io/',
         github: 'https://github.com/Borovkov-S/Weather-sounds.github.io.git'
     },
