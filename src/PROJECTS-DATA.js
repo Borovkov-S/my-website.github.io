@@ -14,7 +14,7 @@ const PROJECTS_DATA = {
     'blog': {
         id: 'blog',
         description: 'Frontend приложение, написанное на React+Vite с использованием MOK-backend', 
-        demo: false,
+        demo: 'https://borovkov-s.github.io/blog-site',
         github: 'https://github.com/Borovkov-S/BLOG.github.io.git'
     },
     'createx': {
